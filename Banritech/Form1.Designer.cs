@@ -1,4 +1,4 @@
-﻿namespace banritech
+﻿namespace Banritech
 {
     partial class Form1
     {

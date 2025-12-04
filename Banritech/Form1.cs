@@ -1,4 +1,4 @@
-namespace banritech
+namespace Banritech
 {
     public partial class Form1 : Form
     {
