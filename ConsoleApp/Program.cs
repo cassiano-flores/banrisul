@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleApp
+﻿namespace ConsoleApp
 {
     class Program
     {
@@ -26,12 +20,42 @@ namespace ConsoleApp
             //    ShowMsg("Nome preenchido");
             //}
 
-            Console.WriteLine("Options:");
-            Console.WriteLine("1. Update\n2. Delete\n3. Create\n4. Read");
-            int option = int.Parse(Console.ReadLine());
-            Option toOption = (Option) option;
+            //Console.WriteLine("Options:");
+            //Console.WriteLine("1. Update\n2. Delete\n3. Create\n4. Read");
+            //int option = int.Parse(Console.ReadLine());
+            //Option toOption = (Option) option;
 
-            Console.WriteLine(toOption);
+            //Console.WriteLine(toOption);
+
+            int count = 0;
+            while (count < 10)
+            {
+                Console.WriteLine("Count: " + count);
+                count = count + 1;
+            }
+
+            do
+            {
+                Console.WriteLine("Count: " + count);
+                count += 1;
+            }
+            while (count < 10);
+
+            string[] words = { "Cassiano", "Luis", "Flores", "Michel" };
+            foreach (string word in words)
+            {
+                Console.WriteLine("Word: " + word);
+            }
+
+            for (int i = 0; i < words.Length; i++)
+            {
+                Console.WriteLine("Word: " + words[i]);
+            }
+
+            for (int i = words.Length - 1; i >= 0; i--)
+            {
+                Console.WriteLine("Word: " + words[i]);
+            }
 
             Console.ReadLine();
         }
