@@ -57,6 +57,22 @@
                 Console.WriteLine("Word: " + words[i]);
             }
 
+            Console.WriteLine("{0} {1}", byte.MinValue, byte.MaxValue);
+
+            Console.WriteLine(bool.Parse("true"));
+
+            try
+            {
+                string number = "1234";
+                byte b = Byte.Parse(number);
+                //byte b = Convert.ToByte(number);
+                Console.WriteLine(b);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Não é possível converter o número para byte");
+            }
+
             Console.ReadLine();
         }
 
